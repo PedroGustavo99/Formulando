@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(../img/fundo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar-custom { /*css navegação*/
+    background-color: #262626;
+    color: #F2A20C !important;
+    font-weight: 100;
+    justify-content: center;
+}
+
+.navbar-custom .navbar-brand {
+    text-align: center;
+}
+
+.navbar-custom .navbar-nav .nav-link.navbar-custom {
+    text-align: center;
+}
+
+.navbar{
+    align-items: center !important;
+    justify-content: center !important; 
+}
+
+.botao-personalizado {
+    background-color: #F2A20C !important; /* Substitua pelo código de cor desejado */
+    color: #FEFEFE !important; /* Cor do texto, se aplicável */
+}
+
+.container-principal {
+    background-color: #FEFEFE;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.411);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar horizontalmente */
+    padding: 15px; /* Espaçamento interno */
+    margin: auto;
+    width: 85%;
+}
+.container-artigo{
+    display: flex;
+    padding: center;
+}
+
+
+.item-pagina {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.texto-artigo {
+    flex: 1;
+    padding: 20px;
+    font-size: 19px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.custom-image {
+    width: 100px !important; 
+    height: 100px !important;
+    margin-right: 20px ;
+}
+
+.row{
+    align-items: center !important;
+    justify-content: center !important; 
+    margin-top: 3% !important;
+}
+
+.btn-primary{
+    background-color: #F2A20C !important;
+}
+
+.cabecalho {
+    background-color: #262626;
+    height: 200px;
+    display: flex; /*largura do cabeçaçlo*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacao { /* links que vao para outra pagina*/
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: #F2A20C ;
+    margin-top: 15px;
+}
+
+.cor-barra {
+    color: #F2A20C ;
+}
+
+.cor-navegacao {
+    color: #F2A20C;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    justify-content: center;
+}
+
+.cor-titulo-pagina {
+    color: #F2A20C;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
+}
+
+.rodape {
+    background-color: #262626;
+    height: 40px;
+}
+
+.texto-rodape{
+    text-align: center;
+    color: #F2A20C;
+}
+
+.calcular {
+    padding: 50px; /* Espaçamento interno do retângulo */
+    border-radius: 10px; /* Raio das bordas curvadas */
+    display: flex; /* Tornar o conteúdo flexível para centralização */
+    flex-direction: column; /* Alinhar os elementos verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    justify-content: center; /* Centralizar verticalmente */
+    text-align: center; /* Centralizar texto dentro da div */
+    background-color: #e6dfce;
+    margin-top: 50px;
+}
+
+.container-principal .row .card {
+    border: none !important;
+    box-shadow: none !important; /* Isso remove sombras, se houver */
+}
+
+/* Estilos para telas pequenas (até 768px) */
+@media (max-width: 768px) {
+    .container-principal {
+        width: 100%; /* Largura total */
+        padding: 10px; /* Espaçamento interno menor */
+    }
+
+    .container-artigo {
+        flex-direction: column; /* Empilhar itens verticalmente */
+        align-items: center; /* Centralizar itens */
+    }
+
+    .item-pagina {
+        margin: 0; /* Remover margens laterais */
+    }
+
+    .texto-artigo {
+        margin-left: 0; /* Remover margem esquerda */
+    }
+
+    .calcular {
+        padding: 20px; /* Espaçamento interno menor */
+    }
+}
+
+/* Estilos para telas médias (769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .container-principal {
+        width: 90%; /* Largura um pouco menor */
+    }
+
+    /* Outros ajustes de layout conforme necessário */
+}
+
+/* Estilos para telas grandes (mais de 992px) */
+@media (min-width: 993px) {
+    /* Outros ajustes de layout conforme necessário */
+}
+
+@media (max-width: 768px) {
+    .cor-titulo-pagina {
+        font-size: 40px; /* Reduza o tamanho da fonte para telas menores */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .cor-titulo-pagina {
+        font-size: 50px; /* Ajuste o tamanho da fonte para telas de tamanho médio, se necessário */
+    }
+}
