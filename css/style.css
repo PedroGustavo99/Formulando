@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
 }
 
-.navbar-custom { /*css navegação*/
+.navbar-custom {
     background-color: #262626;
     color: #F2A20C !important;
     font-weight: 100;
@@ -33,8 +33,8 @@ body {
 }
 
 .botao-personalizado {
-    background-color: #F2A20C !important; /* Substitua pelo código de cor desejado */
-    color: #FEFEFE !important; /* Cor do texto, se aplicável */
+    background-color: #F2A20C !important;
+    color: #FEFEFE !important;
 }
 
 .container-principal {
@@ -42,8 +42,8 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.411);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centralizar horizontalmente */
-    padding: 15px; /* Espaçamento interno */
+    align-items: center;
+    padding: 15px;
     margin: auto;
     width: 85%;
 }
@@ -88,13 +88,13 @@ body {
 .cabecalho {
     background-color: #262626;
     height: 200px;
-    display: flex; /*largura do cabeçaçlo*/
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.navegacao { /* links que vao para outra pagina*/
+.navegacao {
     list-style: none;
     font-size: 20px;
     display: flex;
@@ -132,69 +132,64 @@ body {
 }
 
 .calcular {
-    padding: 50px; /* Espaçamento interno do retângulo */
-    border-radius: 10px; /* Raio das bordas curvadas */
-    display: flex; /* Tornar o conteúdo flexível para centralização */
-    flex-direction: column; /* Alinhar os elementos verticalmente */
-    align-items: center; /* Centralizar horizontalmente */
-    justify-content: center; /* Centralizar verticalmente */
-    text-align: center; /* Centralizar texto dentro da div */
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: #e6dfce;
     margin-top: 50px;
 }
 
 .container-principal .row .card {
     border: none !important;
-    box-shadow: none !important; /* Isso remove sombras, se houver */
+    box-shadow: none !important; 
 }
+/*Responsividade*/
 
-/* Estilos para telas pequenas (até 768px) */
 @media (max-width: 768px) {
     .container-principal {
-        width: 100%; /* Largura total */
-        padding: 10px; /* Espaçamento interno menor */
+        width: 100%;
+        padding: 10px;
     }
 
     .container-artigo {
-        flex-direction: column; /* Empilhar itens verticalmente */
-        align-items: center; /* Centralizar itens */
+        flex-direction: column;
+        align-items: center;
     }
 
     .item-pagina {
-        margin: 0; /* Remover margens laterais */
+        margin: 0;
     }
 
     .texto-artigo {
-        margin-left: 0; /* Remover margem esquerda */
+        margin-left: 0;
     }
 
     .calcular {
-        padding: 20px; /* Espaçamento interno menor */
+        padding: 20px;
     }
 }
 
-/* Estilos para telas médias (769px a 992px) */
 @media (min-width: 769px) and (max-width: 992px) {
     .container-principal {
-        width: 90%; /* Largura um pouco menor */
+        width: 90%;
     }
-
-    /* Outros ajustes de layout conforme necessário */
 }
 
-/* Estilos para telas grandes (mais de 992px) */
 @media (min-width: 993px) {
-    /* Outros ajustes de layout conforme necessário */
 }
 
 @media (max-width: 768px) {
     .cor-titulo-pagina {
-        font-size: 40px; /* Reduza o tamanho da fonte para telas menores */
+        font-size: 40px; 
     }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
     .cor-titulo-pagina {
-        font-size: 50px; /* Ajuste o tamanho da fonte para telas de tamanho médio, se necessário */
+        font-size: 50px; 
     }
 }

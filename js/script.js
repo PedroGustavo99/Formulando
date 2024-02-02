@@ -1,4 +1,4 @@
-function calcCirculo(){
+function calcCirculo() {
     var raioCirculo = document.getElementById("raio").value;
 
     raioCirculo = parseInt(raioCirculo);
@@ -8,21 +8,21 @@ function calcCirculo(){
     document.getElementById("resultado").textContent = area.toFixed(2);
 }
 
-function calcTronco(){
+function calcTronco() {
     var baseMaior = document.getElementById("baseMaior").value;
     var baseMenor = document.getElementById("baseMenor").value;
     var areaLateral = document.getElementById("areaLateral").value;
-    
+
     baseMaior = parseInt(baseMaior);
     baseMenor = parseInt(baseMenor);
     areaLateral = parseInt(areaLateral);
 
-    var area = baseMaior + baseMenor + areaLateral;
+    var area = (baseMaior + baseMenor) * areaLateral / 2;
 
     document.getElementById("resultado").textContent = area;
 }
 
-function calcRetangulo(){
+function calcRetangulo() {
     var ladoMaior = document.getElementById("ladoMaior").value;
     var ladoMenor = document.getElementById("ladoMenor").value;
 
@@ -34,22 +34,19 @@ function calcRetangulo(){
     document.getElementById("resultado").textContent = result;
 }
 
-function calcCoroa(){
+function calcCoroa() {
     var raioExterno = document.getElementById("raioExterno").value;
     var raioInterno = document.getElementById("raioInterno").value;
 
     raioExterno = parseInt(raioExterno);
     raioInterno = parseInt(raioInterno);
 
-    raioExterno = raioExterno * raioExterno;
-    raioInterno = raioInterno * raioInterno;
-
-    var area = (raioExterno - raioInterno) * Math.PI;
+    var area = Math.PI * (raioExterno ** 2 - raioInterno ** 2);
 
     document.getElementById("resultado").textContent = area.toFixed(2);
 }
 
-function calcTrapezoid(){
+function calcTrapezoid() {
     var baseMaior = parseInt(document.getElementById("baseMaior").value);
     var baseMenor = parseInt(document.getElementById("baseMenor").value);
     var altura = parseInt(document.getElementById("alturaTrapezoid").value);
@@ -57,7 +54,6 @@ function calcTrapezoid(){
     var area = ((baseMaior + baseMenor) / 2) * altura;
 
     document.getElementById("resultado").textContent = area.toFixed(2);
-
 }
 
 function calcPoligon() {
@@ -66,7 +62,7 @@ function calcPoligon() {
     var comprimentoLado = parseFloat(document.getElementById("comprimentoLado").value);
 
     var nLados, anguloInterno;
-    
+
     if (valorEscolhido == "1") {
         nLados = 5;
     } else if (valorEscolhido == "2") {
@@ -83,7 +79,7 @@ function calcPoligon() {
     document.getElementById("resultado").textContent = areaTotal.toFixed(2);
 }
 
-function calcQuadrado(){
+function calcQuadrado() {
     var lado = document.getElementById("ladoQuadrado").value;
     lado = parseInt(lado);
 
@@ -92,13 +88,12 @@ function calcQuadrado(){
     document.getElementById("resultado").textContent = area;
 }
 
-function calcSetorCircular(){
+function calcSetorCircular() {
     var raioMaior = parseFloat(document.getElementById("raioMaior").value);
     var angulo = parseFloat(document.getElementById("angulo").value);
     var raioSetor = parseFloat(document.getElementById("raioSetor").value);
-    
-    var areaSetorCircular = (angulo/360) * Math.PI * raioSetor**2;
-    
 
+    var areaSetorCircular = (angulo / 360) * Math.PI * raioSetor ** 2;
 
+    document.getElementById("resultado").textContent = areaSetorCircular.toFixed(2);
 }
